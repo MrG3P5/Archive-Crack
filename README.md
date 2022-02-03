@@ -34,4 +34,4 @@
 ### Tools Overview
 |    main.py    |
 | ------------- |
-|(https://raw.githubusercontent.com/MrG3P5/Archive-Crack/main/Screenshot%20at%202022-02-04%2001-38-39.png)|
+|![index](https://raw.githubusercontent.com/MrG3P5/Archive-Crack/main/Screenshot%20at%202022-02-04%2001-38-39.png)|
