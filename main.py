@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 # Author : X - MrG3P5
 # Version : 1.0
-import pwd
-from random import choice
 import pyfiglet
 import os
 import zipfile
