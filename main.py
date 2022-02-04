@@ -4,7 +4,8 @@
 import pyfiglet
 import os
 import zipfile
-import py7zr
+import subprocess
+import sys
 from colorama import Fore, init
 from rarfile import RarFile
 
@@ -95,11 +96,12 @@ def _crack_7zip_():
         print(f"{cyan}[ {white}- {cyan}] {white}Trying : {yellow}{password}{reset}")
 
         try:
-          _7zip_file_ = py7zr.SevenZipFile(ask_path_7zip, mode='r', password=password)
-          _7zip_file_.extractall()
-          print(f"{cyan}[ {green}# {cyan}] {white}Password Is : {green}{password}{reset}")
-          found = True
-          break
+          stdout = subprocess.call("7z t -p'{0}' {1}".format(password, ask_path_7zip), stderr = subprocess.DEVNULL, stdout = subprocess.DEVNULL, shell = True)
+          if stdout == 0:
+            print(f"{cyan}[ {green}# {cyan}] {white}Password Is : {green}{password}{reset}")
+            found = True
+            return
+       #   pass
         except:
           pass
     if not found:
@@ -123,10 +125,10 @@ def __main__():
   elif __choice__ == 3:
     _crack_7zip_()
   elif __choice__ == 0:
-    print(f"[ - ] Oke Byee")
+    print(f"{cyan}[ {white}- {cyan}] {white}Oke Byee")
     exit()
   else:
-    print(f"[ ! ] Wrong Input!, Select 1, 2, 3, 0.")
+    print(f"{cyan}[ {red}! {cyan}] {white}Wrong Input!, Select 1, 2, 3, 0.")
 
 
 if __name__ == "__main__":
