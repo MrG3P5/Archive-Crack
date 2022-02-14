@@ -15,6 +15,7 @@
 > pkg install python git unrar unzip p7zip -y
 > git clone https://github.com/MrG3P5/Archive-Crack
 > cd Archive-Crack
+> pip3 install cython
 > pip3 install -r require.txt
 > python3 main.py
 ```
@@ -27,6 +28,7 @@
 > apt install python3 git p7zip unrar unzip -y
 > git clone https://github.com/MrG3P5/Archive-Crack
 > cd Archive-Crack
+> pip3 install cython
 > pip3 install -r require.txt
 > python3 main.py
 ```
