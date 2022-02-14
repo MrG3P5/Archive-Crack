@@ -100,8 +100,7 @@ def _crack_7zip_():
           if stdout == 0:
             print(f"{cyan}[ {green}# {cyan}] {white}Password Is : {green}{password}{reset}")
             found = True
-            return
-       #   pass
+            break
         except:
           pass
     if not found:
