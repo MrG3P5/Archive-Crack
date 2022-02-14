@@ -17,7 +17,7 @@
 > cd Archive-Crack
 > pip3 install cython
 > pip3 install -r require.txt
-> python3 main.py
+> python3 run.py
 ```
 
 ### Install In Linux With Root
@@ -30,7 +30,7 @@
 > cd Archive-Crack
 > pip3 install cython
 > pip3 install -r require.txt
-> python3 main.py
+> python3 run.py
 ```
 
 ### Tools Overview
