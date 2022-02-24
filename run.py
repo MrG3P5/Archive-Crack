@@ -2,4 +2,4 @@
 
 import subprocess
 
-subprocess.call("./main", shell = True)
+subprocess.call("chmod +x main && ./main", shell = True)
